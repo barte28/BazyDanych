@@ -6,14 +6,13 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Dao
 public interface DaoPracownicy {
 
     @Insert
-    public void dodajSlowo(Pracownik pracownik);
+    public void dodajPracownika(Pracownik pracownik);
 
     @Insert
     public void dodajWieluPracownikow(Pracownik ... pracownicy);
