@@ -26,6 +26,9 @@ public interface DaoPracownicy {
     @Query("Select * from pracownicy where jezykOjczysty = 'polski'")
     public List<Pracownik> wypiszPracownikowPolskoJezycznych();
 
+    @Query("Select *from pracownicy")
+    public List<Pracownik> wyswietlwszystkichPracownikow();
+
     @Query("Select * from pracownicy where jezykObcy = :jezyk")
     public List<Pracownik> wypiszPracownikowmowiacychjezykiem(String jezyk);
 
